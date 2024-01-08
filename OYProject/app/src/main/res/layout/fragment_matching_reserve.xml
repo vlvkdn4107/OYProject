@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MatchingReserveFragment"
+    android:orientation="vertical">
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:fillViewport="true"
+            android:layout_marginBottom="1dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+                        <FrameLayout
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:layout_marginEnd="5dp">
+                                <ImageButton
+                                    android:id="@+id/reserveArea"
+                                    android:layout_width="80dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:background="@drawable/matchingbutton" />
+                                <TextView
+                                    android:layout_width="80dp"
+                                    android:layout_height="30dp"
+                                    android:text="전체 지역"
+                                    android:textColor="@color/black"
+                                    android:gravity="center"/>
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:layout_marginEnd="5dp">
+                                <ImageButton
+                                    android:id="@+id/reserveDate"
+                                    android:layout_width="80dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:background="@drawable/matchingbutton" />
+                                <TextView
+                                    android:layout_width="80dp"
+                                    android:layout_height="30dp"
+                                    android:text="전체 날짜"
+                                    android:gravity="center"/>
+                        </FrameLayout>
+                        <FrameLayout
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:layout_marginEnd="5dp">
+                                <ImageButton
+                                    android:id="@+id/reserveTime"
+                                    android:layout_width="80dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:background="@drawable/matchingbutton" />
+                                <TextView
+                                    android:layout_width="80dp"
+                                    android:layout_height="30dp"
+                                    android:text="전체 시간"
+                                    android:gravity="center"/>
+                        </FrameLayout>
+                </LinearLayout>
+        </HorizontalScrollView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="예약"
+            android:textSize="40dp"
+            android:gravity="center"
+            android:background="@color/green"
+            />
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/matchingBottom"
+        android:title="매칭"
+        android:icon="@drawable/ic_baseline_sports_tennis_24"
+        />
+    <item
+        android:id="@+id/newPupillBottom"
+        android:title="테린이"
+        android:icon="@drawable/ic_baseline_sentiment_satisfied_alt_24"
+        />
+    <item
+        android:id="@+id/dealBottom"
+        android:title="중고거래"
+        android:icon="@drawable/ic_baseline_local_offer_24"
+        />
+    <item
+        android:id="@+id/myProfile"
+        android:title="프로필"
+        android:icon="@drawable/ic_baseline_account_circle_24"
+        />
+</menu>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MatchingFragment"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    android:gravity="top"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/MatchingToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/white"
+        >
+        <Button
+            android:id="@+id/matchingBtn"
+            android:text="매칭"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="65dp"
+            android:layout_height="35dp" />
+        <Button
+            android:id="@+id/reserveBtn"
+            android:text="예약"
+            android:layout_marginEnd="10dp"
+            android:layout_width="65dp"
+            android:layout_height="35dp"
+            />
+        <Button
+            android:id="@+id/lessonBtn"
+            android:text="레슨"
+            android:layout_width="65dp"
+            android:layout_height="35dp"
+            />
+
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/matchingFragmentmatching"
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" />
+
+
+
+
+
+
+
+</LinearLayout>
+
+</LinearLayout>

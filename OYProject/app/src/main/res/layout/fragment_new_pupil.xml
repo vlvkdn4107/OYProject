@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".NewPupilFragment">
+        <LinearLayout
+            android:id="@+id/newPupilmainLinear"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/rulestextview"
+                android:layout_width="55dp"
+                android:layout_height="match_parent"
+                android:text="룰"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:clickable="true"/>
+            <TextView
+                android:id="@+id/termtextview"
+                android:layout_width="55dp"
+                android:layout_height="match_parent"
+                android:text="용어"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:clickable="true"/>
+            <TextView
+                android:id="@+id/mannertextview"
+                android:layout_width="55dp"
+                android:layout_height="match_parent"
+                android:text="매너"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:clickable="true"/>
+        </LinearLayout>
+    <FrameLayout
+        android:id="@+id/newPupilFragment"
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" />
+
+</LinearLayout>
