@@ -21,9 +21,6 @@ import com.google.android.material.tabs.TabLayoutMediator;
 
 public class MainActivity extends AppCompatActivity{
 
-
-
-
     BottomNavigationView bottomNavigationView;
     MatchingFragment matchingFragment = new MatchingFragment();
     NewPupilFragment newPupilFragment = new NewPupilFragment();

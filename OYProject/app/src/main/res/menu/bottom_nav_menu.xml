@@ -13,7 +13,7 @@
         />
     <item
         android:id="@+id/dealBottom"
-        android:title="중고거래"
+        android:title="프리마켓"
         android:icon="@drawable/ic_baseline_local_offer_24"
         />
     <item

@@ -130,13 +130,14 @@
          </FrameLayout>
       </LinearLayout>
    </HorizontalScrollView>
-   <TextView
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:text="매칭에 매칭"
-       android:textSize="30dp"
-       android:background="@color/purple_200"
-       android:gravity="center"/>
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/matchingRecyclerView"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      tools:listitem="@layout/matching_list_item"/>
+
+
 
 
 </LinearLayout>
