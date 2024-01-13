@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    tools:context=".NewPupilFragment">
+    tools:context=".NewPupilFragment"
+    android:background="@color/white">
         <LinearLayout
             android:id="@+id/newPupilmainLinear"
             android:layout_width="match_parent"

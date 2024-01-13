@@ -5,14 +5,211 @@
     android:layout_height="match_parent"
     tools:context=".NewPupilTermFragment"
     android:orientation="vertical">
-
-
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="용어"
-        android:textSize="30dp"
-        android:background="@color/rine"
-        android:gravity="center"/>
+        android:layout_height="match_parent"
+        android:layout_marginBottom="15dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType = "centerCrop"
+            android:src="@drawable/tennis_img"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:fillViewport="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="15dp">
+
+                <TextView
+                    android:text="에이스(ace)"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginBottom="5dp"/>
+                <TextView
+                    android:text="자신이 친 강력한 샷을 상대방이 라켓으로 받아내지 못한 타구.
+                                    \n가끔 '노터치(no touch)'라고 말하기도 하는데 이는 잘못된 표현이다."
+                    android:textSize="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="5dp"/>
+                <TextView
+                    android:text="듀스(duce)"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginBottom="5dp"/>
+                <TextView
+                    android:text="한 게임에서의 40:40, 혹은 한 세트에서의 5-5의 상황."
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"/>
+                <TextView
+                    android:text="어드밴티지(advantage)"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginBottom="5dp"/>
+                <TextView
+                    android:text="듀스에서 점수를 먼저 낸 경우이다. 한 번 더 이겨서 2포인트를 먼저 따내면 경기가 끝난다."
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"/>
+                <TextView
+                    android:text="어드밴티지 서버(adbantage sever)"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginBottom="5dp"/>
+                <TextView
+                    android:text="듀스 후 서버(서브를 하는 사람)가 먼저 1점을 얻었을 때를 말한다"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"/>
+                <TextView
+                    android:text="어드밴티지 리시버(advantage receiver)"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginBottom="5dp"/>
+                <TextView
+                    android:text="듀스 후 리시버(서브를 받는 사람)가 먼저 1점을 얻었을 때를 말한다."
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"/>
+                <TextView
+                    android:text="all(올)"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginBottom="5dp"/>
+                <TextView
+                    android:text="동점을 말한다. 예를 들어 15:15일 경우 15 대 15가 아니라 15올(fifteen all)이라고 말한다."
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"/>
+                <TextView
+                    android:text="폴트(fault)"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginBottom="5dp"/>
+                <TextView
+                    android:text="서브한 공이 서비스코트에 바르게 들어가지 않거나, 서버가 규칙을 위반하는 것을 말한다. 한 번은 허용되지만 두 번 연속으로 범할 경우 '더블 폴트(double fault)'라고 하여 서버 쪽의 실점으로 넘어가게 된다."
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"/>
+                <TextView
+                    android:text="풋폴트(foot fault)"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginBottom="5dp"/>
+                <TextView
+                    android:text="서브에서 공을 타격하기 전에 발이 베이스 라인에 닿는 경우를 말한다."
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"/>
+                <TextView
+                    android:text="러브(love)"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginBottom="5dp"/>
+                <TextView
+                    android:text="테니스에서는 0점을 love라고 한다. 0점이 왜 '러브'라고 불리게 됐는지 확실한 설은 없으나, 가장 유력한 설은 테니스 코트에서 스코어 영(zero)를 나타낼 때 달걀 모양의 동그라미를 썼는데, 이 달걀의 프랑스 어가 '뢰프(l'oeuf)'로서, 이것이 영어의 러브(love)'로 변했다는 것이다."
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"/>
+                <TextView
+                    android:text="렛(let)"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginBottom="5dp"/>
+                <TextView
+                    android:text="서브를 한 공이 네트를 맞고 상대방의 코드에 들어가는 경우, 혹은 리시버가 준비되지 않은 상태에서 서브가 될 때를 말한다. 이때 샷으로 카운터 되지 않고 다시 경기가 진행된다. 간혹 '노플레이(no play)'라고 말하기도 하는데 이건 잘못된 표현이다."
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"/>
+                <TextView
+                    android:text="랠리(really)"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginBottom="5dp"/>
+                <TextView
+                    android:text="공이 한쪽에서 받는 것을 실패하지 않고 계속해서 코트 위로 공을 주고받는 것을 말한다."
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"/>
+                <TextView
+                    android:text="매치포인트(match point)"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginBottom="5dp"/>
+                <TextView
+                    android:text="마지막 세트에서의 마지막 포인트를 말한다. 매치포인트로 한 세트에서의 승자가 결정된다."
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"/>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
 
 </LinearLayout>

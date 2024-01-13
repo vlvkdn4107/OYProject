@@ -6,12 +6,107 @@
     tools:context=".NewPupilMannerFragment"
     android:orientation="vertical">
 
-
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="매너"
-        android:textSize="30dp"
-        android:background="@color/rine"
-        android:gravity="center"/>
+        android:layout_height="match_parent"
+        android:layout_marginBottom="15dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType = "centerCrop"
+            android:src="@drawable/manner_img"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:fillViewport="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="15dp">
+
+                <TextView
+                    android:text="코트 예절"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginBottom="5dp"/>
+                <TextView
+                    android:text="1. 코트 내에서는 서로 상대방의 인격을 존중할 것.
+                                    \n2. 코트 내에서는 단정한 복장(테니스복과 테니스 슈즈)을 갖출 것.
+                                    \n3. 코트 내에서 덥다고 상의를 벗거나 걷어올려 육체를 노출시키지 말것.
+                                    \n4. 네트를 넘어가거나 누르지 말 것.
+                                    \n5. 코트 이용에 대한 안내문을 숙지하고 규칠을 준수할 것.
+                                    \n6. 상대방이 공을 주어 줄 경우 '고맙습니다' 라는 말을 항상 할 것.
+                                    \n7. 코트에 들어갈 때 지나고 간 물건들은 코트 사이드에 정리할 것.
+                                    \n8. 코트 상태에 따라서 솔질(brush)과 선(line) 그을 것.
+                                    \n9. 운동 시작과 끝에 항상 코트와 그외 시설물을 정리하는 습관을 가질 것.
+                                    \n10. 껌을 씹거나 담배를 물고 코드에 들어가지 말 것.
+                                    \n11. 자기 주변에 떨어진 공은 자신이 줍도록 할 것.
+                                    \n12. 상대방에게 공을 줄 때는 받기 좋게 윈 바운드(one bound)로 보낼 것"
+                    android:textSize="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:text="연습 및 시합 예절"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginBottom="5dp"/>
+                <TextView
+                    android:text="연습 시:
+                                    \n1. 시간 준수: 정해진 연습 시간에 늦지 않고 도착하고, 정해진 시간 동안 집중해서 훈련합니다.
+                                    \n2. 라켓 교환: 상대방과 함께 연습할 때에는 라켓을 교환하여 다양한 상황에서 연습할 수 있도록 합니다.
+                                    \n3. 친절하고 협력적인 태도: 팀이나 파트너와 함께 연습할 때에는 친절하고 협력적인 태도를 유지합니다. 서로에게 피드백을 주고 받는 것이 중요합니다.
+                                    \n4. 볼 모으기: 연습 중에 사용한 공은 정리하여 한 곳에 모아놓습니다. 이는 효율적인 훈련을 위해 중요합니다.
+
+                                    \n\n시합 시:
+                                    \n1. 무리하지 않기: 시합 중에는 너무 급하게 행동하지 않고, 상대방이 준비될 수 있도록 충분한 시간을 주는 것이 중요합니다.
+                                    \n2. 친절한 경쟁: 경기 도중에는 친절하게 경쟁하되, 과도한 경쟁심이나 불필요한 갈등을 피하도록 합니다.
+                                    \n3. 볼 관리: 서브나 점수판의 변경 시에는 적절히 볼을 관리하여 빠르게 진행되도록 돕습니다.
+                                    \n4. 페어 플레이: 점수가 끝난 후에는 상대방에게 경기에 대한 감사의 인사를 건네고, 손을 흔들어줍니다.
+                                    \n5. 심사 판단 존중: 심판의 판단에 대해 이의를 제기할 때에는 존중하고, 감정을 통제하여 공정한 경기를 유지합니다.
+                                    \n6. 안전을 위한 주의: 시합 중에는 안전을 위해 상대방이나 자신이 부상을 입지 않도록 주의를 기울입니다.
+                                    \n7. 선수 릴리프: 상대방이나 자신이 더위나 피로로 인해 릴리프를 필요로 할 때에는 이를 존중하고 허용합니다."
+                    android:textSize="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:text="심판에 대한 예절"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginBottom="5dp"/>
+                <TextView
+                    android:text="1.존중과 예의: 선수들은 항상 심판을 존중하고 예의를 갖춰야 합니다. 감정을 통제하고 공정한 판단을 받아들이는 태도가 필요합니다.
+                                       \n2. 이의 제기 방법: 선수가 판단에 이의를 제기하려면 정해진 절차를 따라야 합니다. 정중하게 이의를 제기하고, 판단이 잘못되었을 경우를 위해 대비된 절차를 따르도록 합니다.
+                                       포인트나 게임 이후의 손 흔들기: 경기가 끝난 후에는 선수들이 심판에게 손을 흔들어주는 것이 예의에 맞습니다.
+                                       \n3. 행동 규범 준수: 선수들은 심판의 지시에 따라야 하며, 불만족이나 불만을 표현할 때에는 존중적인 언어를 사용해야 합니다. 심사자 향한 공격적인 행동 방지: 심판에게 공격적이거나 모욕적인 언어나 행동을 하지 않도록 주의해야 합니다.
+                                       휴식 시간 이용: 휴식 시간에는 심판도 휴식하고 자신의 역할을 다시 확인할 수 있는 시간을 갖습니다. 선수들은 이를 존중해야 합니다.
+                                       \n4. 점수 통지: 심판은 정확한 점수를 통보하고, 선수들이 실수 없이 경기를 진행할 수 있도록 돕습니다.
+                                       선수 교체 및 룰 지키기: 심판은 선수 교체나 룰 위반 등에 대해 객관적으로 판단하고 규칙을 엄격하게 시행해야 합니다."
+                    android:textSize="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="5dp"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
 </LinearLayout>

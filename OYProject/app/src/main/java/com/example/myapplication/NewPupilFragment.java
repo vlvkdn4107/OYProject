@@ -26,16 +26,16 @@ public class NewPupilFragment extends Fragment {
                              Bundle savedInstanceState) {
         binding = FragmentNewPupilBinding.inflate(inflater,container, false);
 
-        NewPupilrulesFragment newPupilrulesFragment = new NewPupilrulesFragment();
+        NewPupilRuleFragment newPupilruleFragment = new NewPupilRuleFragment();
         FragmentTransaction transaction = getChildFragmentManager().beginTransaction();
-        transaction.replace(R.id.newPupilFragment,newPupilrulesFragment);
+        transaction.replace(R.id.newPupilFragment,newPupilruleFragment);
         transaction.commit();
 
         binding.rulestextview.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 FragmentTransaction transaction = getChildFragmentManager().beginTransaction();
-                transaction.replace(R.id.newPupilFragment,newPupilrulesFragment);
+                transaction.replace(R.id.newPupilFragment,newPupilruleFragment);
                 transaction.commit();
             }
         });
