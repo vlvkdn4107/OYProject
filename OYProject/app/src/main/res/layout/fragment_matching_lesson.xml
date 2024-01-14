@@ -87,12 +87,10 @@
         </LinearLayout>
     </HorizontalScrollView>
 
-    <TextView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/matchingRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="레슨"
-        android:textSize="30dp"
-        android:background="@color/rine"
-        android:gravity="center"/>
+        tools:listitem="@layout/reserve_list_item"/>
 
 </LinearLayout>

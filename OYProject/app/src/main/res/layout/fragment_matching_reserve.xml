@@ -71,14 +71,11 @@
                         </FrameLayout>
                 </LinearLayout>
         </HorizontalScrollView>
-        <TextView
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/matchingRecyclerView"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="예약"
-            android:textSize="40dp"
-            android:gravity="center"
-            android:background="@color/green"
-            />
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/reserve_list_item"/>
 
 
 

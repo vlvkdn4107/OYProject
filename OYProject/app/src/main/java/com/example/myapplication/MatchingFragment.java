@@ -1,24 +1,15 @@
 package com.example.myapplication;
 
-import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.viewpager2.widget.ViewPager2;
 
-import android.view.FocusFinder;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.Toast;
 
 import com.example.myapplication.databinding.FragmentMatchingBinding;
-import com.example.myapplication.interfaces.OnClickMatchingBtn;
-import com.google.android.material.tabs.TabLayout;
 
 public class MatchingFragment extends Fragment{
      FragmentMatchingBinding binding;
@@ -39,7 +30,7 @@ public class MatchingFragment extends Fragment{
         transaction.replace(R.id.matchingFragmentmatching,matchingMatchingFragment);
         transaction.commit();
         // 매칭 플래그먼트
-        binding.matchingBtn.setOnClickListener(new View.OnClickListener() {
+        binding.matchingTextview.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {  //   Fragment안에 버튼 클릭시 다른 Fragment 전환
                 MatchingMatchingFragment matchingMatchingFragment = new MatchingMatchingFragment();
@@ -49,7 +40,7 @@ public class MatchingFragment extends Fragment{
                 transaction.commit();
             }
         });
-        binding.reserveBtn.setOnClickListener(new View.OnClickListener() {
+        binding.reserveTextview.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 MatchingReserveFragment matchingReserveFragment = new MatchingReserveFragment();
@@ -59,7 +50,7 @@ public class MatchingFragment extends Fragment{
 
             }
         });
-        binding.lessonBtn.setOnClickListener(new View.OnClickListener() {
+        binding.lessonTextview.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 MatchingLessonFragment matchingLessonFragment = new MatchingLessonFragment();

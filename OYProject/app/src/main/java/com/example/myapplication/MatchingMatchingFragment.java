@@ -1,6 +1,6 @@
 package com.example.myapplication;
 
-import android.content.Intent;
+import android.app.Dialog;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -8,40 +8,36 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 
-import com.example.myapplication.interfaces.OnClickMatchingBtn;
+import com.example.myapplication.databinding.FragmentMatchingMatchingBinding;
 
 
-public class MatchingMatchingFragment extends Fragment implements OnClickMatchingBtn {
+public class MatchingMatchingFragment extends Fragment {
 
+    FragmentMatchingMatchingBinding binding;
 
     public MatchingMatchingFragment() {
         // Required empty public constructor
     }
 
-    public static MatchingMatchingFragment newInstance(String param1, String param2) {
-        MatchingMatchingFragment fragment = new MatchingMatchingFragment();
 
-        return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-
-
-    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_matching_matching, container, false);
+        binding = FragmentMatchingMatchingBinding.inflate(inflater,container,false);
+
+        binding.matchingDate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Dialog dialog = new Dialog(getContext(), R.style.DialogAnimation);
+                dialog.setContentView(R.layout.matching_date);
+                dialog.show();
+            }
+        });
+
+        return binding.getRoot();
     }
 
-    @Override
-    public void onClickMating() {
 
-    }
 }
