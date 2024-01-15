@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!--radius(둥굴게_-->
+    <corners android:radius="20dp" />
+    <!--테두리 굵기 및 색-->
+    <stroke android:color="#C0C0C0" android:width="1dp"/>
+    <!--색-->
+    <solid android:color="@color/green"/>
+
+</shape>

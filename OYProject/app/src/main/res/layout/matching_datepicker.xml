@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="380dp"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_gravity="center">
@@ -25,21 +25,23 @@
         android:layout_marginStart="5dp"/>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:gravity="center"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
         android:layout_marginTop="10dp">
         <HorizontalScrollView
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="50dp"
             android:fillViewport="true"
             android:scrollbars="none"
+            android:layout_gravity="center"
             android:layout_marginBottom="1dp">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:background="@color/white"
+                android:gravity="center"
                 android:orientation="horizontal"
-                android:padding="5dp">
+                android:paddingStart="5dp">
                 <FrameLayout
                     android:layout_width="80dp"
                     android:layout_height="30dp"
@@ -48,7 +50,6 @@
                         android:id="@+id/allTime"
                         android:layout_width="80dp"
                         android:layout_height="30dp"
-                        android:layout_marginEnd="5dp"
                         android:background="@drawable/matchingbutton" />
                     <TextView
                         android:layout_width="80dp"
@@ -65,7 +66,6 @@
                         android:id="@+id/am07"
                         android:layout_width="80dp"
                         android:layout_height="30dp"
-                        android:layout_marginEnd="5dp"
                         android:background="@drawable/matchingbutton" />
                     <TextView
                         android:layout_width="80dp"
@@ -83,7 +83,6 @@
                         android:id="@+id/am08"
                         android:layout_width="80dp"
                         android:layout_height="30dp"
-                        android:layout_marginEnd="5dp"
                         android:background="@drawable/matchingbutton" />
                     <TextView
                         android:layout_width="80dp"
@@ -100,7 +99,6 @@
                         android:id="@+id/am09"
                         android:layout_width="80dp"
                         android:layout_height="30dp"
-                        android:layout_marginEnd="5dp"
                         android:background="@drawable/matchingbutton" />
                     <TextView
                         android:layout_width="80dp"
@@ -117,7 +115,6 @@
                         android:id="@+id/am10"
                         android:layout_width="80dp"
                         android:layout_height="30dp"
-                        android:layout_marginEnd="5dp"
                         android:background="@drawable/matchingbutton" />
                     <TextView
                         android:layout_width="80dp"
@@ -134,7 +131,6 @@
                         android:id="@+id/am11"
                         android:layout_width="80dp"
                         android:layout_height="30dp"
-                        android:layout_marginEnd="5dp"
                         android:background="@drawable/matchingbutton" />
                     <TextView
                         android:layout_width="80dp"
@@ -151,7 +147,6 @@
                         android:id="@+id/pm12"
                         android:layout_width="80dp"
                         android:layout_height="30dp"
-                        android:layout_marginEnd="5dp"
                         android:background="@drawable/matchingbutton" />
                     <TextView
                         android:layout_width="80dp"
@@ -168,7 +163,6 @@
                         android:id="@+id/pm1"
                         android:layout_width="80dp"
                         android:layout_height="30dp"
-                        android:layout_marginEnd="5dp"
                         android:background="@drawable/matchingbutton" />
                     <TextView
                         android:layout_width="80dp"
@@ -185,7 +179,6 @@
                         android:id="@+id/pm2"
                         android:layout_width="80dp"
                         android:layout_height="30dp"
-                        android:layout_marginEnd="5dp"
                         android:background="@drawable/matchingbutton" />
                     <TextView
                         android:layout_width="80dp"
@@ -202,7 +195,6 @@
                         android:id="@+id/pm3"
                         android:layout_width="80dp"
                         android:layout_height="30dp"
-                        android:layout_marginEnd="5dp"
                         android:background="@drawable/matchingbutton" />
                     <TextView
                         android:layout_width="80dp"
@@ -219,7 +211,6 @@
                         android:id="@+id/pm4"
                         android:layout_width="80dp"
                         android:layout_height="30dp"
-                        android:layout_marginEnd="5dp"
                         android:background="@drawable/matchingbutton" />
                     <TextView
                         android:layout_width="80dp"
@@ -236,7 +227,6 @@
                         android:id="@+id/pm5"
                         android:layout_width="80dp"
                         android:layout_height="30dp"
-                        android:layout_marginEnd="5dp"
                         android:background="@drawable/matchingbutton" />
                     <TextView
                         android:layout_width="80dp"
@@ -253,7 +243,6 @@
                         android:id="@+id/pm6"
                         android:layout_width="80dp"
                         android:layout_height="30dp"
-                        android:layout_marginEnd="5dp"
                         android:background="@drawable/matchingbutton" />
                     <TextView
                         android:layout_width="80dp"
@@ -270,7 +259,6 @@
                         android:id="@+id/pm7"
                         android:layout_width="80dp"
                         android:layout_height="30dp"
-                        android:layout_marginEnd="5dp"
                         android:background="@drawable/matchingbutton" />
                     <TextView
                         android:layout_width="80dp"
@@ -287,7 +275,6 @@
                         android:id="@+id/pm8"
                         android:layout_width="80dp"
                         android:layout_height="30dp"
-                        android:layout_marginEnd="5dp"
                         android:background="@drawable/matchingbutton" />
                     <TextView
                         android:layout_width="80dp"
@@ -304,7 +291,6 @@
                         android:id="@+id/pm9"
                         android:layout_width="80dp"
                         android:layout_height="30dp"
-                        android:layout_marginEnd="5dp"
                         android:background="@drawable/matchingbutton" />
                     <TextView
                         android:layout_width="80dp"
@@ -321,7 +307,6 @@
                         android:id="@+id/pm10"
                         android:layout_width="80dp"
                         android:layout_height="30dp"
-                        android:layout_marginEnd="5dp"
                         android:background="@drawable/matchingbutton" />
                     <TextView
                         android:layout_width="80dp"
@@ -338,7 +323,6 @@
                         android:id="@+id/pm11"
                         android:layout_width="80dp"
                         android:layout_height="30dp"
-                        android:layout_marginEnd="5dp"
                         android:background="@drawable/matchingbutton" />
                     <TextView
                         android:layout_width="80dp"
@@ -355,7 +339,6 @@
                         android:id="@+id/am0"
                         android:layout_width="80dp"
                         android:layout_height="30dp"
-                        android:layout_marginEnd="5dp"
                         android:background="@drawable/matchingbutton" />
                     <TextView
                         android:layout_width="80dp"
@@ -372,7 +355,6 @@
                         android:id="@+id/am1"
                         android:layout_width="80dp"
                         android:layout_height="30dp"
-                        android:layout_marginEnd="5dp"
                         android:background="@drawable/matchingbutton" />
                     <TextView
                         android:layout_width="80dp"
@@ -384,6 +366,152 @@
             </LinearLayout>
         </HorizontalScrollView>
     </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="지역"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:fillViewport="true"
+            android:scrollbars="none"
+            android:layout_marginBottom="1dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="5dp">
+                <FrameLayout
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="5dp">
+                    <ImageButton
+                        android:id="@+id/allArea"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/matchingbutton" />
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:text="전체지역"
+                        android:textColor="@color/black"
+                        android:gravity="center"/>
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="5dp">
+                    <ImageButton
+                        android:id="@+id/seoul"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/matchingbutton" />
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:text="서울"
+                        android:textColor="@color/black"
+                        android:gravity="center"/>
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="5dp">
+                    <ImageButton
+                        android:id="@+id/incheon"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/matchingbutton" />
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:text="인천"
+                        android:textColor="@color/black"
+                        android:gravity="center"/>
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="5dp">
+                    <ImageButton
+                        android:id="@+id/gyeonggi"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/matchingbutton" />
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:text="경기"
+                        android:textColor="@color/black"
+                        android:gravity="center"/>
+                </FrameLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="170dp">
+        <!--초기화 버튼-->
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:layout_marginEnd="10dp">
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:background="@drawable/dateapplybtn"/>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="초기화"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+        </RelativeLayout>
+            <!--적용하기 버튼-->
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:layout_marginEnd="10dp">
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/dateapplybtn"/>
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="적용하기"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+    </LinearLayout>
+
+
 
 
 
