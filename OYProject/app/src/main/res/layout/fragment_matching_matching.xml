@@ -34,7 +34,7 @@
              android:layout_height="30dp"
              android:layout_marginEnd="5dp">
             <ImageButton
-                android:id="@+id/matchingArea"
+                android:id="@+id/matchingSearch"
                 android:layout_width="80dp"
                 android:layout_height="30dp"
                 android:layout_marginEnd="5dp"
@@ -42,41 +42,7 @@
             <TextView
                 android:layout_width="80dp"
                 android:layout_height="30dp"
-                android:text="전체 지역"
-                android:textColor="@color/black"
-                android:gravity="center"/>
-         </FrameLayout>
-
-         <FrameLayout
-             android:layout_width="80dp"
-             android:layout_height="30dp"
-             android:layout_marginEnd="5dp">
-            <ImageButton
-                android:id="@+id/matchingDate"
-                android:layout_width="80dp"
-                android:layout_height="30dp"
-                android:layout_marginEnd="5dp"
-                android:background="@drawable/matchingbutton" />
-            <TextView
-                android:layout_width="80dp"
-                android:layout_height="30dp"
-                android:text="전체 날짜"
-                android:gravity="center"/>
-         </FrameLayout>
-         <FrameLayout
-             android:layout_width="80dp"
-             android:layout_height="30dp"
-             android:layout_marginEnd="5dp">
-            <ImageButton
-                android:id="@+id/matchingOldCalendar"
-                android:layout_width="80dp"
-                android:layout_height="30dp"
-                android:layout_marginEnd="5dp"
-                android:background="@drawable/matchingbutton" />
-            <TextView
-                android:layout_width="80dp"
-                android:layout_height="30dp"
-                android:text="전체 구력"
+                android:text="매칭 찾기"
                 android:gravity="center"/>
          </FrameLayout>
          <FrameLayout

@@ -31,11 +31,11 @@ public class MatchingMatchingFragment extends Fragment {
                              Bundle savedInstanceState) {
         binding = FragmentMatchingMatchingBinding.inflate(inflater,container,false);
 
-        binding.matchingDate.setOnClickListener(new View.OnClickListener() {
+        binding.matchingSearch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Dialog dialog = new Dialog(getContext(), R.style.DatePickerStyle);
-                dialog.setContentView(R.layout.matching_datepicker);
+                dialog.setContentView(R.layout.fragment_matching_datepicker);
                 dialog.show();
 //                Calendar calendar =  Calendar.getInstance();
 //                int nYear = calendar.get(Calendar.YEAR);

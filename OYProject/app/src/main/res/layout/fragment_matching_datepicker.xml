@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="false">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <DatePicker
+                android:id="@+id/datePicker1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:calendarViewShown="false"
+                android:datePickerMode="calendar"
+                android:scaleX="1.1"
+                android:scaleY="1.1" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="시간"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginStart="5dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp">
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:fillViewport="true"
+                    android:scrollbars="none"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="1dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingStart="5dp">
+                        <FrameLayout
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:layout_marginEnd="5dp">
+                            <ImageButton
+                                android:id="@+id/allTime"
+                                android:layout_width="80dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/matchingbutton" />
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="30dp"
+                                android:text="전체시간"
+                                android:textColor="@color/black"
+                                android:gravity="center"/>
+                        </FrameLayout>
+                        <FrameLayout
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:layout_marginEnd="5dp">
+                            <ImageButton
+                                android:id="@+id/am07"
+                                android:layout_width="80dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/matchingbutton" />
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="30dp"
+                                android:text="오전 07:00"
+                                android:textColor="@color/black"
+                                android:gravity="center"/>
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:layout_marginEnd="5dp">
+                            <ImageButton
+                                android:id="@+id/am08"
+                                android:layout_width="80dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/matchingbutton" />
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="30dp"
+                                android:text="오전 08:00"
+                                android:textColor="@color/black"
+                                android:gravity="center"/>
+                        </FrameLayout>
+                        <FrameLayout
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:layout_marginEnd="5dp">
+                            <ImageButton
+                                android:id="@+id/am09"
+                                android:layout_width="80dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/matchingbutton" />
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="30dp"
+                                android:text="오전 09:00"
+                                android:textColor="@color/black"
+                                android:gravity="center"/>
+                        </FrameLayout>
+                        <FrameLayout
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:layout_marginEnd="5dp">
+                            <ImageButton
+                                android:id="@+id/am10"
+                                android:layout_width="80dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/matchingbutton" />
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="30dp"
+                                android:text="오전 10:00"
+                                android:textColor="@color/black"
+                                android:gravity="center"/>
+                        </FrameLayout>
+                        <FrameLayout
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:layout_marginEnd="5dp">
+                            <ImageButton
+                                android:id="@+id/am11"
+                                android:layout_width="80dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/matchingbutton" />
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="30dp"
+                                android:text="오전 11:00"
+                                android:textColor="@color/black"
+                                android:gravity="center"/>
+                        </FrameLayout>
+                        <FrameLayout
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:layout_marginEnd="5dp">
+                            <ImageButton
+                                android:id="@+id/pm12"
+                                android:layout_width="80dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/matchingbutton" />
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="30dp"
+                                android:text="오후 12:00"
+                                android:textColor="@color/black"
+                                android:gravity="center"/>
+                        </FrameLayout>
+                        <FrameLayout
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:layout_marginEnd="5dp">
+                            <ImageButton
+                                android:id="@+id/pm1"
+                                android:layout_width="80dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/matchingbutton" />
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="30dp"
+                                android:text="오후 1:00"
+                                android:textColor="@color/black"
+                                android:gravity="center"/>
+                        </FrameLayout>
+                        <FrameLayout
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:layout_marginEnd="5dp">
+                            <ImageButton
+                                android:id="@+id/pm2"
+                                android:layout_width="80dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/matchingbutton" />
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="30dp"
+                                android:text="오후 2:00"
+                                android:textColor="@color/black"
+                                android:gravity="center"/>
+                        </FrameLayout>
+                        <FrameLayout
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:layout_marginEnd="5dp">
+                            <ImageButton
+                                android:id="@+id/pm3"
+                                android:layout_width="80dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/matchingbutton" />
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="30dp"
+                                android:text="오후 3:00"
+                                android:textColor="@color/black"
+                                android:gravity="center"/>
+                        </FrameLayout>
+                        <FrameLayout
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:layout_marginEnd="5dp">
+                            <ImageButton
+                                android:id="@+id/pm4"
+                                android:layout_width="80dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/matchingbutton" />
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="30dp"
+                                android:text="오후 4:00"
+                                android:textColor="@color/black"
+                                android:gravity="center"/>
+                        </FrameLayout>
+                        <FrameLayout
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:layout_marginEnd="5dp">
+                            <ImageButton
+                                android:id="@+id/pm5"
+                                android:layout_width="80dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/matchingbutton" />
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="30dp"
+                                android:text="오후 5:00"
+                                android:textColor="@color/black"
+                                android:gravity="center"/>
+                        </FrameLayout>
+                        <FrameLayout
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:layout_marginEnd="5dp">
+                            <ImageButton
+                                android:id="@+id/pm6"
+                                android:layout_width="80dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/matchingbutton" />
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="30dp"
+                                android:text="오후6:00"
+                                android:textColor="@color/black"
+                                android:gravity="center"/>
+                        </FrameLayout>
+                        <FrameLayout
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:layout_marginEnd="5dp">
+                            <ImageButton
+                                android:id="@+id/pm7"
+                                android:layout_width="80dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/matchingbutton" />
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="30dp"
+                                android:text="오후 7:00"
+                                android:textColor="@color/black"
+                                android:gravity="center"/>
+                        </FrameLayout>
+                        <FrameLayout
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:layout_marginEnd="5dp">
+                            <ImageButton
+                                android:id="@+id/pm8"
+                                android:layout_width="80dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/matchingbutton" />
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="30dp"
+                                android:text="오후 8:00"
+                                android:textColor="@color/black"
+                                android:gravity="center"/>
+                        </FrameLayout>
+                        <FrameLayout
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:layout_marginEnd="5dp">
+                            <ImageButton
+                                android:id="@+id/pm9"
+                                android:layout_width="80dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/matchingbutton" />
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="30dp"
+                                android:text="오후 9:00"
+                                android:textColor="@color/black"
+                                android:gravity="center"/>
+                        </FrameLayout>
+                        <FrameLayout
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:layout_marginEnd="5dp">
+                            <ImageButton
+                                android:id="@+id/pm10"
+                                android:layout_width="80dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/matchingbutton" />
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="30dp"
+                                android:text="오후 10:00"
+                                android:textColor="@color/black"
+                                android:gravity="center"/>
+                        </FrameLayout>
+                        <FrameLayout
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:layout_marginEnd="5dp">
+                            <ImageButton
+                                android:id="@+id/pm11"
+                                android:layout_width="80dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/matchingbutton" />
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="30dp"
+                                android:text="오후 11:00"
+                                android:textColor="@color/black"
+                                android:gravity="center"/>
+                        </FrameLayout>
+                        <FrameLayout
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:layout_marginEnd="5dp">
+                            <ImageButton
+                                android:id="@+id/am0"
+                                android:layout_width="80dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/matchingbutton" />
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="30dp"
+                                android:text="오전 00:00"
+                                android:textColor="@color/black"
+                                android:gravity="center"/>
+                        </FrameLayout>
+                        <FrameLayout
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:layout_marginEnd="5dp">
+                            <ImageButton
+                                android:id="@+id/am1"
+                                android:layout_width="80dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/matchingbutton" />
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="30dp"
+                                android:text="오전 01:00"
+                                android:textColor="@color/black"
+                                android:gravity="center"/>
+                        </FrameLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="지역"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp">
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:fillViewport="true"
+                    android:scrollbars="none"
+                    android:layout_marginBottom="1dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+                        <FrameLayout
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:layout_marginEnd="5dp">
+                            <ImageButton
+                                android:id="@+id/allArea"
+                                android:layout_width="80dp"
+                                android:layout_height="30dp"
+                                android:layout_marginEnd="5dp"
+                                android:background="@drawable/matchingbutton" />
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="30dp"
+                                android:text="전체지역"
+                                android:textColor="@color/black"
+                                android:gravity="center"/>
+                        </FrameLayout>
+                        <FrameLayout
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:layout_marginEnd="5dp">
+                            <ImageButton
+                                android:id="@+id/seoul"
+                                android:layout_width="80dp"
+                                android:layout_height="30dp"
+                                android:layout_marginEnd="5dp"
+                                android:background="@drawable/matchingbutton" />
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="30dp"
+                                android:text="서울"
+                                android:textColor="@color/black"
+                                android:gravity="center"/>
+                        </FrameLayout>
+                        <FrameLayout
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:layout_marginEnd="5dp">
+                            <ImageButton
+                                android:id="@+id/incheon"
+                                android:layout_width="80dp"
+                                android:layout_height="30dp"
+                                android:layout_marginEnd="5dp"
+                                android:background="@drawable/matchingbutton" />
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="30dp"
+                                android:text="인천"
+                                android:textColor="@color/black"
+                                android:gravity="center"/>
+                        </FrameLayout>
+                        <FrameLayout
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:layout_marginEnd="5dp">
+                            <ImageButton
+                                android:id="@+id/gyeonggi"
+                                android:layout_width="80dp"
+                                android:layout_height="30dp"
+                                android:layout_marginEnd="5dp"
+                                android:background="@drawable/matchingbutton" />
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="30dp"
+                                android:text="경기"
+                                android:textColor="@color/black"
+                                android:gravity="center"/>
+                        </FrameLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="구력"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <SeekBar
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+                    android:progressDrawable="@drawable/progressbarstyle"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:text="1년"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingStart="170dp">
+                <!--초기화 버튼-->
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:layout_marginEnd="10dp">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/dateapplybtn"/>
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:text="초기화"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:gravity="center"/>
+                </RelativeLayout>
+                <!--적용하기 버튼-->
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:layout_marginEnd="10dp">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/dateapplybtn"/>
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:text="적용하기"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
